@@ -1,0 +1,64 @@
+body{
+    background: #000;
+  }
+  
+  @font-face {
+    font-family: 'Rock it';
+    src: url('Rockit.woff2') format('woff2');
+  }
+  
+  .content {
+    width: 75%;
+    margin:auto;
+
+  }
+
+  .titre {
+    width: 75%;
+    text-align: center;
+    margin:auto;
+    padding-top: 30px;
+    font-family: 'Rock it', normal;
+    font-size:60px;
+    color: #DDAAAA;
+    font-weight: 200;
+    letter-spacing: 30px;
+    text-shadow: 1px 0px 4px #660000, 2px 0px 4px #660000, 3px 0px 4px #660000, 2px 0px 3px #DD2222, 2px 3px 15px #DD2222, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #DD2222,40px 0vw 200px #DD2222;
+  }
+
+  .texte {
+    text-align: center;
+    min-height: 20vh;
+    color:white;
+    padding:50px;
+  }
+
+  .cd-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 40vh;
+    background-image: linear-gradient(to bottom, rgba(20, 6, 2, 1), rgba(200, 200, 200, 0.1)), url("./metal2.jpg");
+    position: relative;
+    z-index:-1;
+  }
+  
+  .flicker-slow{
+    animation: flicker 3s linear infinite;
+  }
+  
+  .flicker-fast{
+    animation: flicker 1s linear infinite;
+  }
+  
+  @keyframes flicker {
+      0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+      opacity: .99;
+      }
+  
+      20%, 21.999%, 63%, 63.999%, 65%, 69.999% {  
+          opacity: 0.4;
+      }
+  }
+  
